@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>경아의 먹킷리스트</title>
+  <meta charset="utf-8">
+  <script>
+  function nightDayHandler(self){
+  var target = document.querySelector('body');
+ if(self.value === 'night'){
+   target.style.backgroundColor='black';
+   target.style.color='white';
+   self.value = 'day';
+
+   var alist = document.querySelectorAll('a')
+ var i = 0;
+ while(i < alist.length){
+  alist[i].style.color = 'coral';
+  i = i + 1;
+  }
+ } else {
+   target.style.backgroundColor='white';
+   target.style.color='black';
+   self.value = 'night';
+
+   var alist = document.querySelectorAll('a')
+   var i = 0;
+   while(i < alist.length){
+   alist[i].style.color = 'blue';
+   i = i + 1;
+  }
+ }
+}
+  </script>
+</head>
+<body>
+<h1
+style="background-color:powderblue"><a href="index.html">경아의 먹킷리스트</a></h1>
+<input type="button" value="night" onclick="
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white';">
+<input type="button" value="day" onclick="
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';">
+
+<input id="night_day" type="button" value="night" onclick="
+ nightDayHandler(this);
+">
+
+</head>
+<body>
+
+<ol>
+  <li><a href="1.html">분당</a></li>
+  <li><a href="2.html">강남</a></li>
+  <li><a href="3.html">홍대/연남/상수</a></li>
+  <li><a href="4.html">그 외</a></li>
+</ol>
+
+<h2>홍대/연남/상수</h2>
+<p><mark>FOOD</mark><br><br>키친봄날<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MTZfMjk3%2FMDAxNjMxNzY5ODI0Nzg5.H1P5wjKxRQgxlOccxRcXm8H4VVUYhCJ-hcUznb9m4uQg.fSfJfrzBN0__1EG6UE_1u2mKRwsgPwJFd6K4nqWiShIg.JPEG.o______oii%2FKakaoTalk_20210916_123006482_12.jpg&type=a340"<br><br>감칠<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MTlfMTU5%2FMDAxNjE4ODEwNDk0NjI1.QlnXXBLHq_X9dQlFek9479SYdXmZ0pyhtyp_30REBKMg.qO1MgVcISDaV8C46vZKfOHd2k2CFpe4G76fOMbqY2cwg.JPEG.alswn6628%2FIMG_0794.jpg&type=a340"<br><br>뉴오더클럽<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA2MjhfOTMg%2FMDAxNjI0ODc2NTcyOTI2.LMsjzfpUr-r7mHopsyxbDF1ZtQLbrvi1mS2uF0wv-zEg.4f_tQecB1eIimNJfHbb1e_VsvcB8IBxlP-Zz9V3TAXMg.JPEG.chqhr1025%2FIMG_3006.jpg&type=a340"</p>
+<p><mark>CAFE</mark><br><br>네시사분<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA3MjZfMzYg%2FMDAxNjI3MzA4ODczMjE0.09EvWhrm1PnK6sH0d4WIrO2fywm3FIUkCX0axjO92Qcg.PvWBSLmC_vq4UR5PT5EfmRMoWNBaz5SCFeJFFiG0QEAg.JPEG.mmwc2rue%2FIMG_7196.jpg&type=a340"<br><br>Deweet<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODAxMDVfMTI5%2FMDAxNTE1MTM2ODE3Nzk4.ictiDOgJHi0FywASnVd0-xdRmhjODSqpq0Icz5TmPPEg.n3lmWkb_MzsS41X_jrnW0JkK8dC7NR-d1wrjUDer5AAg.JPEG.city_coffee%2F1515136734742.jpg&type=a340"<br><br>어나더룸<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA1MDlfNiAg%2FMDAxNTg5MDM0NTk2NDI4.1DxLWqQeY0-FzovyMBI91f9Aq211YTuAMu5dHjixgs0g.MXGlMkT2QnOux6zEb7LDLV2-QgSkAXEj9KjwxhyYh8Ag.JPEG.y_y1024%2F1589034595949.jpg&type=a340"<br><br>Strawberry32<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTFfMTcx%2FMDAxNjI4NjQyMzQ5MDc4.zzzHH9j8J133FzJ-8kO-BMgmgoH-FVN8a4Ys2yoOQv8g.12PWMLmQF_xBLYXw6rJpvB_eGlyAGso5ChszR5TaTjog.JPEG.ehfxlddl44%2FIMG_1012.JPG&type=a340"<br><br>코운코운<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MDJfNDEg%2FMDAxNjI3ODY3MzY2NzA1.JLP3HLY7R0wEL4yN7V84ClTYpAlofcfEaKrKqyw_jgUg.KgH9lj8LNNnbdXy0TjMOXp7JHzt7uAY86Ov_dH7-7j8g.JPEG.junji0724%2FKakaoTalk_20210802_094307275_19.jpg&type=a340"<br><br>Colour<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTAxMDlfMTA4%2FMDAxNTQ2OTkwMDYzOTM1.81cnYlU3-d2VDhA_0pOoEQ553LyOCpFS37W5t7-T1T4g.QvjsbABnzFghGziMqhraXr7UsIj9bcBOq8USIRbC_asg.JPEG.ki__chin%2FIMG_9126.jpg&type=a340"<br><br>사월의 물고기<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDRfMTA2%2FMDAxNjE0ODY3ODk0MzIy.7f-BwQmx_DH_jx32ZNXbBL2Kv1qA6N3Z2ey77dCI5vcg.Bji7yX13_63VBhdeJMAroa2ySvjTfl5GsqDg59cXd10g.JPEG.korean0725%2F%25C0%25BD.jpeg&type=a340"</p>
+
+
+</body>
+</html>

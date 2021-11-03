@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>경아의 먹킷리스트</title>
+  <meta charset="utf-8">
+  <script>
+  function nightDayHandler(self){
+  var target = document.querySelector('body');
+ if(self.value === 'night'){
+   target.style.backgroundColor='black';
+   target.style.color='white';
+   self.value = 'day';
+
+   var alist = document.querySelectorAll('a')
+ var i = 0;
+ while(i < alist.length){
+  alist[i].style.color = 'coral';
+  i = i + 1;
+  }
+ } else {
+   target.style.backgroundColor='white';
+   target.style.color='black';
+   self.value = 'night';
+
+   var alist = document.querySelectorAll('a')
+   var i = 0;
+   while(i < alist.length){
+   alist[i].style.color = 'blue';
+   i = i + 1;
+  }
+ }
+}
+  </script>
+</head>
+<body>
+<h1
+style="background-color:powderblue"><a href="index.html">경아의 먹킷리스트</a></h1>
+<input type="button" value="night" onclick="
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white';">
+<input type="button" value="day" onclick="
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';">
+
+<input id="night_day" type="button" value="night" onclick="
+ nightDayHandler(this);
+">
+</head>
+<body>
+
+<ol>
+  <li><a href="1.html">분당</a></li>
+  <li><a href="2.html">강남</a></li>
+  <li><a href="3.html">홍대/연남/상수</a></li>
+  <li><a href="4.html">그 외</a></li>
+</ol>
+
+<h2>분당</h2>
+<p><mark>FOOD</mark><br><br>그릴에이치코리안레스토랑<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzAxMDFfMTEz%2FMDAxNDgzMjYyNTY3ODI1.umKoDJOtJ31aRKmpWYpVXEntkKEHCVWaBBjQX_RjlkIg.Iv9mgQkH1feS01-m85Pe9neNtGWQLanxfl0ixMclJTwg.JPEG.mike8283%2F20161231_132810.jpg&type=a340"<br><br>카츄마마</p><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA1MDFfMjUg%2FMDAxNTg4Mjg0NjU5NzE4.swa5KwmWx95HO20aV0IjcEERNZcGx_4tggPPZB7j5LYg.fx1PAlWsZtBfHA2gHGwXlJm-4nQ-ZHxoVeMeT3aNlWgg.JPEG.fka09220%2F1588284659549.jpg&type=a340"<br><br>안안<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA3MTBfMSAg%2FMDAxNjI1ODUyMTE0NzQ5.gIai4mgytA8wDjOjekSL6NGeFeS7abct7SILegJrmGgg.4n1iod5Boyj4AfttG9cgDh7ofJVw9GsF9G1PnW2OKhog.JPEG.lyjyjyj92%2Foutput_1716335181.jpg&type=a340"<br><br>클준빛날영<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMjJfMTU4%2FMDAxNjE2Mzk3MjMzMTEx.zJ0I3mRpv2v5r2Jn56jgfE0IUQbmjZ4rxHSHXL8GwB0g.iQTCjLuex1aFHAyD9NshKg0tTwC5uqmS2j06vQhBLHAg.JPEG.j__is_00%2FKakaoTalk_20210322_134234166_06.jpg&type=a340"</p>
+<p><mark>CAFE</mark><br><br>호텔더일마<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MDNfMTU1%2FMDAxNjMwNjU5NTI4ODU4.qi8GKrMsgiB85F2SPTcW_4rDcIPikTaI3oRNHjNXnZYg.zEs6yH3I_b19stG_NCCYQLhk1wk4vx8LHVDAJBGCBigg.JPEG.ekdlschl%2FIMG_8851.JPG&type=a340"<br><br>온적공간<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA3MTdfNTEg%2FMDAxNTk0OTQ0NjE3NTE1.j2pbePiHou4VBqJiFKCRL83NBO-5aLUjV6iZCs-zvLcg.KtWAvyhIpdi89QLdmaTXUlMtTZVcOgtWYIpSYImm-_gg.JPEG.dk1160dk%2FIMG_8851.jpg&type=a340"</p>
+
+</body>
+</html>

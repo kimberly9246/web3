@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>경아의 먹킷리스트</title>
+  <meta charset="utf-8">
+  <script>
+  function nightDayHandler(self){
+  var target = document.querySelector('body');
+ if(self.value === 'night'){
+   target.style.backgroundColor='black';
+   target.style.color='white';
+   self.value = 'day';
+
+   var alist = document.querySelectorAll('a')
+ var i = 0;
+ while(i < alist.length){
+  alist[i].style.color = 'coral';
+  i = i + 1;
+  }
+ } else {
+   target.style.backgroundColor='white';
+   target.style.color='black';
+   self.value = 'night';
+
+   var alist = document.querySelectorAll('a')
+   var i = 0;
+   while(i < alist.length){
+   alist[i].style.color = 'blue';
+   i = i + 1;
+  }
+ }
+}
+  </script>
+</head>
+<body>
+<h1
+style="background-color:powderblue"><a href="index.html">경아의 먹킷리스트</a></h1>
+<input type="button" value="night" onclick="
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white';">
+<input type="button" value="day" onclick="
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';">
+
+<input id="night_day" type="button" value="night" onclick="
+ nightDayHandler(this);
+">
+</head>
+<body>
+
+<ol>
+  <li><a href="1.html">분당</a></li>
+  <li><a href="2.html">강남</a></li>
+  <li><a href="3.html">홍대/연남/상수</a></li>
+  <li><a href="4.html">그 외</a></li>
+</ol>
+
+<h2>강남</h2>
+<p><mark>FOOD</mark><br><br>스폰티니<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA1MTRfMzUg%2FMDAxNjIwOTczMjE3NzQ5.4o0WJ1MKZOHnIHRinMnK-XQ08f8LLtZSUJgIWN1YHKMg.JUuhC7WFaZJIGYF7tdruXGup0Xt37jT-ZF1ZX80O260g.JPEG.xiwang21%2Foutput_2589587796.jpg&type=a340"<br><br>감탄성신<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMDJfNjYg%2FMDAxNjMzMTgxNzMzMjM0.84SIkNyZP7Xw0aJrh0CGPQzNRcjY6-4okS__qA7jcv4g.-bVOzN80knaVtVYc60F8AmB5El7D5z9VSl5ifjK8Juog.JPEG.sunhyeok2%2FIMG_8649.jpg&type=a340"<br><br>밴건디 스테이크 하우스<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA2MzBfMjUz%2FMDAxNjI1MDIwNDg1ODQ2.BtJyz4UuAa2i-i8R62kyvs9VM2wVIrB61fQHgFCuU7Ag.Hfth_7PNvpXqbfjaezMT9q9g1Wa-N2SuMYYT8USwR-og.JPEG.jssj0912%2F1624964259522%25A3%25AD9.jpg&type=a340"<br><br>미소의집<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MTZfMTc0%2FMDAxNjMxODAwNjQzNjg5.L2w08Nj3nn9aDHIDmMtPTNRpsSitTPdFpwQ03XIxpZ4g.DdnjTjFx2fyoxHQeQzFu11K0j2DBjUbDnznX1rLGipog.JPEG.happychord%2FIMG_9354.jpg&type=a340"</p>
+<p><mark>CAFE</mark><br><br>원아베뉴<br><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MThfMTY1%2FMDAxNjMxOTQ3NTczMzQ2.UoyZGWoZsqz4k615x5g75hg4M87eFdzF-VuMXICDlXgg.fshnWxJM3-yJv3-By2J6V62Mkx3SimZWORtPc_FixjUg.JPEG.jo870519%2F%25B1%25D7%25B4%25CF%25B0%25AD%25B3%25B2%25BF%25AA%25C4%25AB%25C6%25E4_%25BF%25F8%25BE%25C6%25BA%25A3%25B4%25BAIMG_3894.jpg&type=a340"</p>
+
+
+</body>
+</html>
